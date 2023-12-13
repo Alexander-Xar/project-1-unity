@@ -370,6 +370,7 @@
 "Assets/Scripts/PhisycsHandler.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Spherehandler.cs"
+"Assets/Scripts/StartingTextManager.cs"
 "Assets/Scripts/UIManager.cs"
 "Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs"
 "Assets/StarterAssets/Mobile/Scripts/CanvasInputs/UICanvasControllerInput.cs"

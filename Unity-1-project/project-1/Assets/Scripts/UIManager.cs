@@ -6,14 +6,28 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public Text gameOverText;
-    
 
     void Start()
     {
         // Initially, hide the "Game Over" text
+        SetGameOverTextActive(false);
+    }
+
+    void Update()
+    {
+        // Check if the game is frozen (timeScale is 0)
+        if (IsGameFrozen())
+        {
+            // Activate the game over text
+            SetGameOverTextActive(true);
+        }
+    }
+
+    void SetGameOverTextActive(bool isActive)
+    {
         if (gameOverText != null)
         {
-            gameOverText.gameObject.SetActive(false);
+            gameOverText.gameObject.SetActive(isActive);
         }
         else
         {
@@ -21,16 +35,8 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    void Update()
+    bool IsGameFrozen()
     {
-        // Check if the game is frozen (timeScale is 0)
-        if (Time.timeScale == 0f)
-        {
-            // Activate the game over text
-            if (gameOverText != null && !gameOverText.gameObject.activeSelf)
-            {
-                gameOverText.gameObject.SetActive(true);
-            }
-        }
+        return Time.timeScale == 0f;
     }
 }
