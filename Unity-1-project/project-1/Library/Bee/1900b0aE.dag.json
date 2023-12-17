@@ -30056,7 +30056,7 @@
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll",
-        "Assets/Scripts/PhisycsHandler.cs",
+        "Assets/Scripts/PhysicsHandler.cs",
         "Assets/Scripts/PlayerController.cs",
         "Assets/Scripts/Spherehandler.cs",
         "Assets/Scripts/StartingTextManager.cs",

@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
 {
     public Text gameOverText;
 
+    private bool isGameOver = false;
+
     void Start()
     {
         // Initially, hide the "Game Over" text
@@ -15,10 +17,23 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        // Check if the game is frozen (timeScale is 0)
-        if (IsGameFrozen())
+        // Check if the game is over
+        if (isGameOver)
         {
             // Activate the game over text
+            SetGameOverTextActive(true);
+        }
+    }
+
+    public void SetGameOver(bool gameOver)
+    {
+        
+        isGameOver = gameOver;
+
+        
+        if (isGameOver && Time.timeScale != 0f)
+        {
+           
             SetGameOverTextActive(true);
         }
     }
@@ -33,10 +48,5 @@ public class UIManager : MonoBehaviour
         {
             Debug.LogError("GameOverText is not assigned in the inspector!");
         }
-    }
-
-    bool IsGameFrozen()
-    {
-        return Time.timeScale == 0f;
     }
 }

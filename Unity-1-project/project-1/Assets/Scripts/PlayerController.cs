@@ -12,15 +12,6 @@ public class PlayerController : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip winAudioClip;
 
-    private void Start()
-    {
-        
-        if (audioSource == null)
-        {
-            audioSource = GetComponent<AudioSource>();
-        }
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (!hasWon && other.CompareTag("Finish"))
@@ -53,6 +44,7 @@ public class PlayerController : MonoBehaviour
         if (gameOverObject != null)
         {
             gameOverObject.SetActive(true);
+            uiManager.SetGameOver(true); 
         }
     }
 }

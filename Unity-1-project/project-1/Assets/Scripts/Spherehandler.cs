@@ -32,10 +32,10 @@ public class SphereHandler : MonoBehaviour
         float distance01 = (distance - minDistance) / (maxDistance - minDistance);
         float proximity01 = 1 - distance01;
 
-        // Material color lerp
+       
         material.color = Color.Lerp(colorAt0, colorAt1, proximity01);
 
-        // Debug proximity
+        
         Debug.Log($"Proximity is {proximity01}");
 
        

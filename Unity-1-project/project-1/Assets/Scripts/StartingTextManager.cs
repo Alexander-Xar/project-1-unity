@@ -12,15 +12,15 @@ public class StartingTextManager : MonoBehaviour
 
     void Start()
     {
-        // Ensure the starting text is initially active
+        
         if (startingText != null)
         {
             startingText.gameObject.SetActive(true);
 
-            // Set the start time
+            
             startTime = Time.time;
 
-            // Deactivate the starting text after startingTextDuration seconds
+           
             Invoke("DeactivateStartingText", startingTextDuration);
         }
         else

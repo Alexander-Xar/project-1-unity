@@ -3619,7 +3619,7 @@ Transform:
   m_GameObject: {fileID: 347889922}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.287, z: 16.406}
+  m_LocalPosition: {x: 0.05, y: 2.78, z: 18.63}
   m_LocalScale: {x: 0.75251, y: 0.75251, z: 0.75251}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3642,7 +3642,7 @@ MonoBehaviour:
   playIfProximityOver: 0.8
   stopIfProximityUnder: 1
   colorAt0: {r: 0.3372549, g: 0.14509805, b: 0.14509805, a: 1}
-  colorAt1: {r: 0.9245283, g: 0.55297256, b: 0.55297256, a: 0}
+  colorAt1: {r: 0.9254902, g: 0.8682762, b: 0.5529412, a: 0}
 --- !u!1 &347963625 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d2f0da3998423f44594868ffed55c3e6, type: 3}
@@ -10097,7 +10097,7 @@ MonoBehaviour:
   playIfProximityOver: 0.7
   stopIfProximityUnder: 1
   colorAt0: {r: 0.6724981, g: 0.6792453, b: 0.22043431, a: 1}
-  colorAt1: {r: 0.8679245, g: 0.84787273, b: 0.60918474, a: 0}
+  colorAt1: {r: 0.19999999, g: 0.83137256, b: 0.7852425, a: 0}
 --- !u!1001 &990376937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16147,7 +16147,7 @@ MonoBehaviour:
   playIfProximityOver: 0.8
   stopIfProximityUnder: 1
   colorAt0: {r: 0.1764706, g: 0.23137257, b: 0.54509807, a: 1}
-  colorAt1: {r: 0.6665005, g: 0.68482435, b: 0.8679245, a: 0}
+  colorAt1: {r: 0.7921569, g: 0.2352941, b: 0.6936458, a: 0}
 --- !u!1 &1871604903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d2f0da3998423f44594868ffed55c3e6, type: 3}
